@@ -1,6 +1,6 @@
 package ClassLoading;
 
-import MutliThreading.Main;
+import mutliThreading.Main;
 
 class Child extends Parent {
 	

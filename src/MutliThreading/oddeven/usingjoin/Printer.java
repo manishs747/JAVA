@@ -3,7 +3,7 @@ package MutliThreading.oddeven.usingjoin;
 public class Printer {
 	 boolean isOdd = false;
 
-	    synchronized void printEven(int number) {
+	    public synchronized void printEven(int number) {
 
 	        while (isOdd == false) {
 	            try {
@@ -17,7 +17,7 @@ public class Printer {
 	        notifyAll();
 	    }
 
-	    synchronized void printOdd(int number) {
+	    public synchronized void printOdd(int number) {
 	        while (isOdd == true) {
 	            try {
 	                wait();

@@ -27,8 +27,8 @@ public class A {
 		   System.out.println("Static Pring A");
 	   }
 	 
-	 public  void print(){
-		   System.out.println(" Pring A");
+	 public   void print(){
+		   System.out.println(" Print A method value of data member b:  "+b);
 	   }
 
 }

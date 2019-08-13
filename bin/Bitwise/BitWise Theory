@@ -1,0 +1,36 @@
+Notes:
+
+
+
+583 = 5*10^2+8*10^1+3*10^0   (decimal)
+
+
+101  = (1*2^2) +0*2^1+ 1*2^0  (binary)
+
+
+
+
+
+Negative:
+
+last bit store sign:  0 for +ve and 1 for -ve
+negative of a decimal number is 2 complemnt of number 
+2 complemet -> change 0 to 1 and 1 to 0  and then add 1   = 2 complement
+
+110  -> 001+1=  010   = -2
+126 ->	0111 1110  ->  rev 1000 0001 + 1 = 1000 0010 = 1000 0010
+
+
+
+
+Shift:
+Left shift(>>) divide by 2  and Right shift(<<) multiply by 2.
+
+
+
+
+
+
+
+
+

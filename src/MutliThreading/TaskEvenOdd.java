@@ -1,5 +1,7 @@
 package MutliThreading;
 
+import mutliThreading.oddeven.usingjoin.Printer;
+
 public class TaskEvenOdd implements Runnable{
 	
 	   private int max;

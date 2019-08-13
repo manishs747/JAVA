@@ -4,10 +4,22 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
+import database.GetPropertyValues;
 
-public class test {
- 
+
+public class Test {
+	
+	private int val = 5;
+	
+	public int getValue() {
+		return this.val;
+	}
+	
 	public static void main(String[] args) {
+		Test t = new Test();
+	
+		System.out.println(t.val);
+		
     /*    int numOfWord = 2;
 		ArrayList<String> list = new ArrayList<String>();
 		list.add("manish");
@@ -48,10 +60,7 @@ public class test {
 				{
 					multipleSearchResult.add(itr);
 				}
-				
-				
 			}
-			
 		}
 		
 		return multipleSearchResult;

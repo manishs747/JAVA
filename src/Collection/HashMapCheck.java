@@ -7,24 +7,15 @@ public class HashMapCheck {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		HashMap<String,String>  map1 = new HashMap<String, String>();
-		map1.put("123", "ma");
+		HashMap<String,Integer>  hash_map = new HashMap<String, Integer>();
+		// Mapping int values to string keys 
+        hash_map.put("Geeks", 10); 
+        hash_map.put("4", 15); 
+        hash_map.put("Geeks", 20); 
+        hash_map.put("Welcomes", 25); 
+        hash_map.put("You", 30); 
 		
-		String s1 = new String("123");
-		
-		HashMap<Integer,Integer>  map2 = new HashMap<Integer, Integer>();
-		map2.put(2, 123);
-		
-		Integer i = new Integer(2);
-		
-		System.out.println(map2.get(i));
-		
-		Integer p = 123;
-		String s = p.toString();
-		
-		System.out.println(p.hashCode());
-		System.out.println(s.hashCode());
-		
+        hash_map.containsValue("Geeks");
 		
 
 	}

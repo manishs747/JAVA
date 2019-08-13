@@ -28,20 +28,22 @@ public class B extends A {
 	   
 	   
 	   public  void print(){
-		   System.out.println(" Pring B");
+		   System.out.println(" Printing  B");
 	   }
 
 	public static void main(String[] args) {
 		
 		A aa = new B();
-		aa.printStatic();
-		aa.print();
+		aa.printStatic();  //static method cant be over ridden
+		aa.print();    
+		B bb =  new B();
 		
 	// 	data member doesnot inherited
 		System.out.println(aa.a);
 		System.out.println(aa.b);
 		System.out.println(aa.c);
-		//System.out.println(aa.d);
+		//System.out.println(aa.d); it throughs error as A doesnt have d
+		System.out.println(bb.b);
 	     
 		aa.callPrivate();///private method never get inherited
 		

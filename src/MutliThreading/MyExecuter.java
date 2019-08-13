@@ -11,16 +11,19 @@ public class MyExecuter {
 	 */
 	public static void main(String[] args) throws InterruptedException {
 
-		MyRunnable mr = new MyRunnable();
-
-		ExecutorService executer = Executors.newFixedThreadPool(2);
+		MyRunnable mr = new MyRunnable("manish");
+		MyRunnable mr1 = new MyRunnable("preeti");
 		
-		 executer.submit(mr); executer.submit(mr); executer.submit(mr);
-		 executer.submit(mr); executer.submit(mr); executer.submit(mr);
+
+		ExecutorService executer = Executors.newFixedThreadPool(4);
+		
+		 executer.submit(mr); 
+		 executer.submit(mr1);
+		// executer.submit(mr); executer.submit(mr); executer.submit(mr);
 		 
 		executer.execute(mr);
 		// executer.execute(mr);
-		Thread t1 = new Thread(mr);
+	/*	Thread t1 = new Thread(mr);
 		Thread t2 = new Thread(mr);
 		Thread t3 = new Thread(mr);
 
@@ -51,7 +54,7 @@ public class MyExecuter {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println("slept for few sec");
+		System.out.println("slept for few sec");*/
 	}
 
 }
