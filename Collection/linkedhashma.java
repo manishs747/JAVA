@@ -1,7 +1,7 @@
 import java.util.LinkedHashMap;
 import java.util.Map.Entry;
 
-import ClassLoading.main;
+import classLoading.main;
 
 
 public class linkedhashma {

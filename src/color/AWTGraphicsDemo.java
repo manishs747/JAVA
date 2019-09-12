@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package color;
 
 import java.awt.*;
