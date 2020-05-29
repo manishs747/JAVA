@@ -7,13 +7,12 @@ public class B extends A {
 	   int d = 6;
 	   
 	   public static void printStatic(){
-		   System.out.println("Static Pring B");
+	   	System.out.println("Static Pring B");
 	   }
-	   
-	   
-	   
+
+
 	   private void privateMethod(){
-			System.out.println("B PRIVATE METHOD");
+	   	System.out.println("B PRIVATE METHOD");
 		}
 	   
 	   public void publicMethod(){
@@ -34,6 +33,8 @@ public class B extends A {
 	public static void main(String[] args) {
 		
 		A aa = new B();
+		aa.finalMethod();
+		aa.callPrivate();
 		aa.printStatic();  //static method cant be over ridden
 		aa.print();    
 		B bb =  new B();

@@ -10,8 +10,12 @@ public class A {
 	private void privateMethod(){
 		System.out.println("A PRIVATE METHOD:b"+b);
 	}
+
+	final void finalMethod(){
+		System.out.println("A FINAL METHOD:b"+b);
+	}
 	
-	  public void publicMethod(){
+	public void publicMethod(){
 			System.out.println("A PUBLIC METHOD");
 		}
 	
