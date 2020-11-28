@@ -6,22 +6,22 @@ public class TryCatchWithReturn {
 	@SuppressWarnings("finally")
 	public static int getANumber(){
 	    try{
-	        return 7;
-	    } finally {
+			System.out.println("Try code Statrted");
+			int n = 5/2;
+			System.out.println("Code After Exception It Wont be Printed");
+			return 7;
+	    }catch (Exception e){
+			System.out.println(e.getMessage());
+		}
+	    finally {
+
 	    	System.out.println("finally code Statrted");
 	        return 43;
-	        //compile error  if write any thng
-	        
 	    }
 	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		System.out.println(getANumber());
-		
-		//int [] name = new int[5];
-		
-
 		
 	}
 

@@ -26,9 +26,7 @@ public enum AbstractCurrency implements Runnable {
 			return "silver";
 		}
 	};
-
 	private int value;
-
 	public abstract String color();
 
 	AbstractCurrency(int value) {

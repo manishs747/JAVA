@@ -3,9 +3,10 @@ package polymorphisam;
 public class D  extends A{
    
 	int data = 10;
-	void m1(){
+	int m1(){
 		//System.out.println("In B data :" + data);
 		System.out.println("B M1 method data:" + data );
+		return this.data;
 	}
 	
 	

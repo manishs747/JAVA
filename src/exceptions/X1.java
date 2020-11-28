@@ -1,6 +1,8 @@
 package exceptions;
 
-public class X1 
+import java.io.IOException;
+
+public class X1
 {  
     public static void main(String [] args) 
     {
@@ -22,9 +24,11 @@ public class X1
             System.out.print("D"); 
         } 
         System.out.print("E"); 
-    } 
-    public static void badMethod() 
+    }
+
+
+    public static void badMethod()
     { 
-        throw new RuntimeException(); 
-    } 
+       throw new RuntimeException();
+    }
 }

@@ -1,38 +1,31 @@
 package enumerators;
 
 
-//The enum constants are static and final implicitely
+//The enum constants are static and final implicitly
 // Enums can be thought of as classes that have fixed set of constants
 
 public enum Currency {
-	PENNY("penny"), NICKLE("nic"), DIME("dime"), QUARTER("quarter");
-	private String value ;
+	PENNY("pny",1), NICKLE("nic",5), DIME("dime",10), QUARTER("quarter",25);
+	private String shortName;
+	private int denomination;
 	
-	Currency(String value) {
-		this.value = value;
-		//System.out.println("COnstruct is called:"+value);
+	Currency(String value,int den) {
+		System.out.println("Enum Constructor is called with val:"+value+" den: " + den);
+		this.shortName = value;
+		this.denomination = den;
 	}
-	
+
 	@Override
 	public String toString() {
-		return this.value;
+		return this.name()+"::"+this.shortName +":"+denomination;
 	}
-	
-	public int samp() {
-		 System.out.println("hello");
-		 return 1;
-	}
-	
+
 	
 	public static void main(String[] args) {
-		
-		System.out.println(Currency.DIME.name());
-		/*for (Currency enu : Currency.values()) {
-			System.out.println(enu);
-			//System.out.println(Currency.values()[0]);
-			
-			
-		}*/
+
+		for (Currency enu : Currency.values()) {
+			System.out.println("ENUM:"+enu+" with Shortname:"+enu.shortName);
+		}
 		
 	}
 	

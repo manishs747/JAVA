@@ -1,7 +1,5 @@
 package java8;
 
-import javaPractice.Collection.ArrayListSortingComparoter;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;

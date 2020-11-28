@@ -2,17 +2,17 @@ package inheritance;
 
 public class A {
 	
-	int a = 10;
-	int b = 20 ;
+	private int a = 10;
+	private int b = 20 ;
 	static int c = 30;	
 	
 	
 	private void privateMethod(){
-		System.out.println("A PRIVATE METHOD:b"+b);
+		System.out.println("A PRIVATE METHOD:A"+b);
 	}
 
 	final void finalMethod(){
-		System.out.println("A FINAL METHOD:b"+b);
+		System.out.println("A FINAL METHOD:A"+b);
 	}
 	
 	public void publicMethod(){
@@ -20,7 +20,7 @@ public class A {
 		}
 	
 	 public void callPrivate(){
-		 System.out.println("A call Priavted Called:a"+a);
+		 System.out.println("A called Private Called:a:"+a);
 		   privateMethod();
 		   publicMethod();
 	   }

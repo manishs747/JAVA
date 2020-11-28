@@ -2,7 +2,7 @@ package inheritance;
 
 public class B extends A {
 	
-	   int b = 25;
+	   private int b = 25;
 	   static int c = 35;
 	   int d = 6;
 	   
@@ -16,7 +16,7 @@ public class B extends A {
 		}
 	   
 	   public void publicMethod(){
-			System.out.println("B PUBLIC METHOD:b"+b);
+			System.out.println("B PUBLIC METHOD:b:"+b);
 		}
 	   
 	 /*  public void callPrivate(){
@@ -27,7 +27,7 @@ public class B extends A {
 	   
 	   
 	   public  void print(){
-		   System.out.println(" Printing  B");
+		   System.out.println("Printing  B");
 	   }
 
 	public static void main(String[] args) {
@@ -40,8 +40,6 @@ public class B extends A {
 		B bb =  new B();
 		
 	// 	data member doesnot inherited
-		System.out.println(aa.a);
-		System.out.println(aa.b);
 		System.out.println(aa.c);
 		//System.out.println(aa.d); it throughs error as A doesnt have d
 		System.out.println(bb.b);

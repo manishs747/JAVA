@@ -3,9 +3,10 @@ package polymorphisam;
 public class A {
 	int data = 7;
 	private int a = 5;
-	void m1(){
+	int m1(){
 		//System.out.println("In A data :" + data);
-		System.out.println("A M1 method data:" + data);
+		//System.out.println("A M1 method data:" + data);
+		return this.data;
 	}
 	
 	void m2(){
